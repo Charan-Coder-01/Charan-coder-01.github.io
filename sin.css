@@ -13,6 +13,7 @@
     {   
         padding: 20px;
         max-width:60%;
+        margin-top: 5%;
         border-radius: 8px;
         box-shadow: 5px 5px 8px #cbced1; 
     }
@@ -147,3 +148,51 @@
         top: 1.5em;
         color: #33ccff;
     }
+    @media (max-width:940px) {
+        .menu ul{
+          display: block;
+          position: fixed;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          max-width: 400px;
+          padding-top: 45px;
+          height: 100%;
+          background: #ecf0f3;
+          box-shadow: 0 5px 10px #b0b0b5;
+          z-index: 12;
+          transition: all 0.3s ease;
+        }
+        .menu ul a{
+         display: block;
+         font-size: 23px;
+         width: 100%;
+         margin-top: 30px;
+         box-shadow: none;
+         text-align: center;
+        }
+        .menu ul a:hover:before{
+          box-shadow: none;
+        }
+        nav label.bars{
+          display: block;
+        }
+        #check:checked ~ label.bars{
+          display: none;
+        }
+        #check:checked ~ ul label.cancel{
+          display: block;
+        }
+        #check:checked ~ ul{
+          left: 0;
+        }
+        .container
+        {
+            margin-top:100px;
+        }
+        .row button
+        {
+            width: 11%;
+            font-size: 100%;
+        }
+      }

@@ -60,14 +60,16 @@ nav .menu{
 
 
 .calculator{
-  max-width:55%;
+  max-width:70%;
+  width:55%;
   border: inset #000000 5px solid;
-  position: relative;
+  position: absolute;
   display:grid;
   background: #000000;
   padding-left: 20px;
+  padding-right:20px;
   padding-top: 25px;
-  margin-top: 50px;
+  margin-top: 10%;
   padding-bottom: 25px;
   border-radius: 10px;
 }
@@ -169,4 +171,57 @@ nav label.cancel{
 }
 #check{
   display: none;
+}
+@media (max-width:940px) {
+  .menu ul{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    max-width: 400px;
+    padding-top: 45px;
+    height: 100%;
+    background: #ecf0f3;
+    box-shadow: 0 5px 10px #b0b0b5;
+    z-index: 12;
+    transition: all 0.3s ease;
+  }
+  .menu ul a{
+   display: block;
+   font-size: 23px;
+   width: 100%;
+   margin-top: 30px;
+   box-shadow: none;
+   text-align: center;
+  }
+  .menu ul a:hover:before{
+    box-shadow: none;
+  }
+  nav label.bars{
+    display: block;
+  }
+  #check:checked ~ label.bars{
+    display: none;
+  }
+  #check:checked ~ ul label.cancel{
+    display: block;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .calculator
+  {
+      margin-top:150px;
+  }
+  .row button
+  {
+      width: 11%;
+      font-size: 100%;
+  }
+  .header
+  {
+    font-size: 3.5rem;
+    margin-top: 10px;
+  }
 }

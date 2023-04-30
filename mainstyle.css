@@ -171,13 +171,30 @@ nav label.cancel{
   #check:checked ~ ul{
     left: 0;
   }
+  .card
+  {
+    max-width:50%;
+    border:20px,black;
+    display:grid;
+    grid-template-areas: "main";
+    overflow: hidden;
+    text-decoration: none;
+    
+  }
+  .wrapper{
+    display: flow-root;
+  }
+  h1{
+    text-align: center;
+    font-size: small;
+  }
 }
 .wrapper
 {
   display: grid;
-  max-width:60%;
+  max-width:100%;
   align-items: center;
-  margin-left: 30%;
+  margin-left: 5%;
 }
 .flex
 {
@@ -200,7 +217,7 @@ h1
 {
   width: 100%;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   color:whitesmoke;
   margin-top: 2%;
 }
