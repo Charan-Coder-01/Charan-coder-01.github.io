@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@100&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="head">
+<nav>
+    <div class="menu">
+      <input type="checkbox" id="check">
+      <div class="logo"><a href="#">The Calculator</a></div>
+         <ul>
+          <label class="btn cancel" for="check"><i class="fas fa-times"></i></label>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="basic.html">Basic</a></li>
+          <li><a href="sin.html">Scientific</a></li>
+          <li><a href="age.html">Age</a></li>
+		  <li><a href="tip.html">Tip</a></li>
+          <li><a href="https://github.com/Charan-Coder-01/Charan-coder-01.github.io">Github</a></li>
+        </ul>
+        <label for="check" class="btn bars"><i class="fas fa-bars"></i></label>
+      </div>
+    </div>
+  
+ <div class="container"> 
+</nav>
+<h1 class="header">
+  Basic Calculator
+</h1>
+ <form class="calculator center" name="calc">
+    
+    <input class="display" name="txt">
+    
+    <span class="num clear" onclick="document.calc.txt.value = ''">C</span>
+    <span class="num" onclick="document.calc.txt.value += '/'">/</span>
+    
+    <span class="num" onclick="document.calc.txt.value += '7'">7</span>
+    <span class="num" onclick="document.calc.txt.value += '8'">8</span>
+    <span class="num" onclick="document.calc.txt.value += '9'">9</span>
+    <span class="num" onclick="document.calc.txt.value += '*'">*</span>
+    
+    
+    <span class="num" onclick="document.calc.txt.value += '4'">4</span>
+    <span class="num" onclick="document.calc.txt.value += '5'">5</span>
+    <span class="num" onclick="document.calc.txt.value += '6'">6</span>
+    <span class="num" onclick="document.calc.txt.value += '-'">-</span>
+    
+    <span class="num" onclick="document.calc.txt.value += '1'">1</span>
+    <span class="num" onclick="document.calc.txt.value += '2'">2</span>
+    <span class="num" onclick="document.calc.txt.value += '3'">3</span>
+    <span class="num plus" onclick="document.calc.txt.value += '+'">+</span>
+    
+    <span class="num" onclick="document.calc.txt.value += '0'">0</span>
+    <span class="num" onclick="document.calc.txt.value += '00'">00</span>
+    <span class="num" onclick="document.calc.txt.value += '.'">.</span>
+    <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+    
+  </form>
+  </div>
+  </div>
+</body>
+
+</html>
